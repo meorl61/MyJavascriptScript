@@ -4,3 +4,4 @@ let name = prompt("請輸入姓名:");
 console.log('hello'+name);
 
 
+!buile function a+b
