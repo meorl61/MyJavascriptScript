@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: beige;
+    }
+
+
+    #orderlistarea{
+        font-size: 1.5em;
+        display:grid;
+        grid-template-columns: 1hr;
+        grid-template-rows: 2em 1em 2hr 1hr;
+        grid-template-areas: 
+        "ordertitle"
+        "addorder"
+        "orderlist"
+        "orderfooter"
+        ;     
+    }
+
+    #ordertitle{
+        text-align: center;
+        grid-area: "ordertitle";
+        font-size: 3em;
+        margin:15px 0 5px 0;
+        padding:0;
+    }
+    #addorder span{        
+        padding:3px 8px 3px 8px;
+        grid-area: "addorder";
+        background-color: #ff0000;
+        color:#fff;
+        font-weight: bolder;
+        border-radius: 30px;
+    }
+    #addorder{
+        text-align: right;  
+        margin-bottom: 10px;      
+    }
+
+    #orderlist{
+        grid-area: "orderlist";
+    }
+
+    table{
+        width:100%;
+    }
+    table#orderlist tr:nth-child(2n){
+        background-color: rgb(212, 212, 212);        
+    }
+
+</style>
+<body>
+    <section id="orderlistarea">
+    <h1 id="ordertitle">訂單</h1>
+    <div id="addorder"><span>+ 新增訂單</span></div>
+    <table id="orderlist">
+        <th>序</th><th>訂單號</th><th>摘要</th><th>進度</th><th>設定</th>
+        <tr>
+            <td>1</td><td>20230516001</td><td>test01</td><td>新訂單</td><td><span class="edit">修</span><span class="dele">刪</span></td>
+        </tr>    
+        <tr>
+            <td>1</td><td>20230516001</td><td>test01</td><td>新訂單</td><td><span class="edit">修</span><span class="dele">刪</span></td>
+        </tr>
+        <tr>
+            <td>1</td><td>20230516001</td><td>test01</td><td>新訂單</td><td><span class="edit">修</span><span class="dele">刪</span></td>
+        </tr>
+        <tr>
+            <td>1</td><td>20230516001</td><td>test01</td><td>新訂單</td><td><span class="edit">修</span><span class="dele">刪</span></td>
+        </tr>
+</table>
+</section>
+<script src="js/testcss.js"></script>
+</body>
+</html>
